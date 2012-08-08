@@ -71,8 +71,8 @@
                   ctx.fillText('Resize events: '+rc, cwidth/2, cheight/2 + 10);
               }
 
-                var resizeTimeout;
-                $(window).resize(function() {
+              var resizeTimeout;
+              $(window).resize(function() {
                   clearTimeout(resizeTimeout);
                   resizeTimeout = setTimeout(resizeCanvas, 100);
               });
