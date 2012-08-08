@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns	= "http://www.w3.org/ns/widgets"
+	xmlns:gap	= "http://phonegap.com/ns/1.0"
+	id		    = "com.1013.logomaker"
+	version 	= "1.0.0">
+
+	<name>Logo Maker</name>
+
+	<description>
+		Creates logos
+	</description>
+
+	<author href="http://1013games.com"
+		email="ryan@1013games.com">
+		Ryan O'Connor
+	</author>
+
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+	<feature name="http://api.phonegap.com/1.0/network"/>
+
+	<preference name="orientation" value="portrait" />
+</widget>
