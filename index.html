@@ -30,10 +30,13 @@
               var oc = 0;  // orientiation counter
               var ios = navigator.userAgent.match(/(iPhone)|(iPod)/); // is iPhone
               
+              resizeCanvas();
+              
               function orientationChange() {
                   // inc orientation counter
                   oc++;
               }
+              
               function resizeCanvas() {
                   // inc resize counter
                   rc++;
