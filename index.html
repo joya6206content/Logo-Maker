@@ -75,27 +75,15 @@
               $(window).resize(function() {
                   clearTimeout(resizeTimeout);
                   resizeTimeout = setTimeout(resizeCanvas, 100);
+                  resizeCanvas();
               });
-              resizeCanvas();
               
               var otimeout;
               window.onorientationchange = function() {
-              
-                navigator.notification.alert(
-                    'You are the winner!',  // message
-                    alertDismissed,         // callback
-                    'Game Over',            // title
-                    'Done'                  // buttonName
-                );
-        
                   clearTimeout(otimeout);
                   otimeout = setTimeout(orientationChange, 50);
               }
               
-                // alert dialog dismissed
-                function alertDismissed() {
-                    // do something
-                }
           });
         </script>
 
