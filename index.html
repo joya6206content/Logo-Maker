@@ -70,8 +70,16 @@
                   ctx.fillText('Resize events: '+rc, cwidth/2, cheight/2 + 10);
               }
 
-              var resizeTimeout;
-              $(window).resize(function() {
+                var resizeTimeout;
+                $(window).resize(function() {
+                
+                    navigator.notification.alert(
+                    '$(window).resize',  // message
+                    alertDismissed,         // callback
+                    'Debug',            // title
+                    'OK'                  // buttonName
+                    );
+                    
                   clearTimeout(resizeTimeout);
                   resizeTimeout = setTimeout(resizeCanvas, 100);
               });
@@ -81,7 +89,12 @@
               window.onorientationchange = function() {
                   clearTimeout(otimeout);
                   otimeout = setTimeout(orientationChange, 50);
-              }			  
+              }
+              
+                // alert dialog dismissed
+                function alertDismissed() {
+                    // do something
+                }
           });
         </script>
 
