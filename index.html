@@ -73,14 +73,14 @@
 
                 var resizeTimeout;
                 $(window).resize(function() {
-                
+                /*
                     navigator.notification.alert(
                     '$(window).resize',  // message
                     alertDismissed,         // callback
                     'Debug',            // title
                     'OK'                  // buttonName
                     );
-                    
+                  */  
                   clearTimeout(resizeTimeout);
                   resizeTimeout = setTimeout(resizeCanvas, 100);
               });
