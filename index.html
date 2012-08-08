@@ -8,6 +8,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/master.css" />
         
+        <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 
     </head>
@@ -72,14 +73,14 @@
 
                 var resizeTimeout;
                 $(window).resize(function() {
-                /*
+                
                     navigator.notification.alert(
                     '$(window).resize',  // message
                     alertDismissed,         // callback
                     'Debug',            // title
                     'OK'                  // buttonName
                     );
-                  */  
+                  
                   clearTimeout(resizeTimeout);
                   resizeTimeout = setTimeout(resizeCanvas, 100);
               });
