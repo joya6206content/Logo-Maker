@@ -1,11 +1,39 @@
+/*
+font-family: 'Nova Oval', cursive;
+font-family: 'Averia Sans Libre', cursive;
+font-family: 'Nixie One', cursive;
+font-family: 'Droid Sans', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Economica', sans-serif;
+font-family: 'Rammetto One', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Wire One', sans-serif;
+font-family: 'Magra', sans-serif;
+font-family: 'Peralta', cursive;
+font-family: 'Spirax', cursive;
+font-family: 'Nunito', sans-serif;
+font-family: 'Marmelad', sans-serif;
+font-family: 'Love Ya Like A Sister', cursive;
+font-family: 'Share', cursive;
+font-family: 'Play', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Lancelot', cursive;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Hammersmith One', sans-serif;
+font-family: 'Jura', sans-serif;
+font-family: 'Vollkorn', serif;
+*/
   body,html
   {
       height: 100%;
       margin: 0;
       padding: 0;
       color: black;
-      font-family: "Arial", "Verdana", sans-serif;
-      font-size: 12px;
+      font-family: verdana, arial, sans-serif;
+      font-size: 11px;
   }
   #container
   {
@@ -27,4 +55,21 @@
       padding-left: 4px;
       padding-top: 2px;
       width: 33%;
+  }
+  #tools {
+      background-color: #ebebeb;
+      border: 0 solid #b3b3b3;
+      height: 100px;
+      padding: 0;
+      padding-left: 4px;
+      padding-top: 2px;
+      width: auto;
+  }
+  .ui-combobox {
+	  position: relative;
+	  display: inline-block;
+  }
+  .ui-combobox-input {
+	  margin: 0;
+	  padding: 0.3em;
   }
