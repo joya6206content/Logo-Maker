@@ -13,6 +13,7 @@
         <script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-widget-combobox.js"></script>
 		<script type="text/javascript" src="js/fabric.min.js"></script>
 		<script type="text/javascript" src="js/canvas.js"></script>
 		
@@ -29,7 +30,36 @@
 				<li><a href="#tabs-2">Second</a></li>
 				<li><a href="#tabs-3">Third</a></li>
 			</ul>
-			<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+			<div id="tabs-1">
+				<div class="ui-widget">
+					<label>Font:</label>
+					<select id="combobox">
+						<option value="">Select one...</option>
+						<option value="ActionScript">ActionScript</option>
+						<option value="AppleScript">AppleScript</option>
+						<option value="Asp">Asp</option>
+						<option value="BASIC">BASIC</option>
+						<option value="C">C</option>
+						<option value="C++">C++</option>
+						<option value="Clojure">Clojure</option>
+						<option value="COBOL">COBOL</option>
+						<option value="ColdFusion">ColdFusion</option>
+						<option value="Erlang">Erlang</option>
+						<option value="Fortran">Fortran</option>
+						<option value="Groovy">Groovy</option>
+						<option value="Haskell">Haskell</option>
+						<option value="Java">Java</option>
+						<option value="JavaScript">JavaScript</option>
+						<option value="Lisp">Lisp</option>
+						<option value="Perl">Perl</option>
+						<option value="PHP">PHP</option>
+						<option value="Python">Python</option>
+						<option value="Ruby">Ruby</option>
+						<option value="Scala">Scala</option>
+						<option value="Scheme">Scheme</option>
+					</select>
+				</div>
+			</div>
 			<div id="tabs-2">Phasellus mattis tincidunt nibh. Cras orci urna, blandit id, pretium vel, aliquet ornare, felis. Maecenas scelerisque sem non nisl. Fusce sed lorem in enim dictum bibendum.</div>
 			<div id="tabs-3">Nam dui erat, auctor a, dignissim quis, sollicitudin eu, felis. Pellentesque nisi urna, interdum eget, sagittis et, consequat vestibulum, lacus. Mauris porttitor ullamcorper augue.</div>
 		</div>

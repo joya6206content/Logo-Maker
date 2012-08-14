@@ -9,7 +9,8 @@ $(function() {
   var ios = navigator.userAgent.match(/(iPhone)|(iPod)/); // is iPhone
   
   $('#Tools').tabs();
-  
+  $("#combobox").combobox();
+
   var canvas = new fabric.Canvas('canvas'),
   	  ctx = (function(){
 		  return canvas.getContext 
